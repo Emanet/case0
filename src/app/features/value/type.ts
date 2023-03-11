@@ -27,13 +27,12 @@ export const prices = {
   [PED_TYPES.TAMPON.MINI]: 20,
   [PED_TYPES.TAMPON.STANDART]: 25,
 };
-
-interface IPedItem {
+export interface IPedItem {
   count: number;
   totalPrice: number;
 }
 
-export interface IItems {
+/* export interface IItems {
   ped: {
     "Standart Ped": IPedItem;
     "Süper Ped": IPedItem;
@@ -47,4 +46,11 @@ export interface IItems {
     "Mini Tampon": IPedItem;
     "Standart Tampon": IPedItem;
   };
+} */
+
+export interface IItems{
+  [category:string]: {
+    [product:string]:IPedItem
+  }
 }
+

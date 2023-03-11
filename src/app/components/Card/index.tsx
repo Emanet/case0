@@ -2,19 +2,16 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteItem } from "@/app/features/value/valueSlice";
 import { StyledButton, StyledCard } from "./styles";
-import { IItems } from "@/app/features/value/type";
+import { IPedItem } from "@/app/features/value/type";
 
 type Props = {
   title: string;
-  items: Record<keyof IItems, { count: string; totalPrice: number }>;
+  items: Record<string,IPedItem>
 };
 
 export default function Card({ title, items }: Props) {
   const dispatch = useDispatch();
-  /*   const itemKeys = Object.keys(items).filter((key) => ((items[key].count.toString() !== "0")));
-  old method
-   */
-  const itemKeys = (Object.keys(items) as Array<keyof typeof items>).filter(
+  const itemKeys = Object.keys(items).filter(
     (key) => items[key].count.toString() !== "0"
   );
   const cardPocket = itemKeys.map((key, index) => {

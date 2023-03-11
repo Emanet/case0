@@ -1,6 +1,5 @@
-import { IItems, PED_TABS } from "@/app/features/value/type";
+import { PED_TABS } from "@/app/features/value/type";
 import { useSelector } from "react-redux";
-import Image from "next/image";
 import Card from "../Card";
 import {
   StyledAddPocketButton,
@@ -15,7 +14,7 @@ import { RootState } from "@/app/store";
 type Props = {};
 
 export default function Pocket({}: Props) {
-  const { items, totalPrice } = useSelector(
+  const { items } = useSelector(
     (state: RootState) => state.counter
   );
 
@@ -29,7 +28,7 @@ export default function Pocket({}: Props) {
       total += item.totalPrice;
     });
   }); */
-  (Object.keys(items) as Array<keyof typeof items>).forEach((key) => {
+  Object.keys(items).forEach((key) => {
     Object.values(items[key]).forEach((item) => {
       total += item.totalPrice;
     });
