@@ -7,23 +7,35 @@ export const StyledSpecialPocketContainer = styled.div`
   padding: 0px;
   gap: 4.5rem;
   background: rgb(255, 255, 255);
-  svg{
+  svg {
     margin-left: 1rem;
   }
 `;
 export const StyledSpecialPocket = styled.div`
+  @media (max-width: 415px) {
+    padding: 3rem 0 3rem 0;
+  }
   display: flex;
   flex-direction: column;
   padding: 3rem;
   gap: 2rem;
 `;
 export const StyledSpecialPocketTitle = styled.span`
+  @media (max-width: 415px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   margin: 0px;
   font-weight: 500;
   font-size: 1.75rem;
   line-height: 130%;
 `;
 export const StyledAddPocketButton = styled.button`
+  @media (max-width: 415px) {
+    width: 80%;
+    margin: 0 auto;
+  }
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
@@ -70,6 +82,10 @@ export const StyledDeliveryInfo = styled.span`
 `;
 
 export const StyledDeliveryInfoBox = styled.div`
+  @media (max-width: 415px) {
+    width: 80%;
+    margin: 0 auto;
+  }
   display: flex;
   flex-direction: row;
   -webkit-box-align: center;
@@ -78,4 +94,11 @@ export const StyledDeliveryInfoBox = styled.div`
   gap: 16px;
   border-radius: 8px;
   width: 100%;
+`;
+
+export const StyledImg = styled.img`
+  @media (max-width: 415px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `;

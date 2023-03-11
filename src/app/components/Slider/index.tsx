@@ -2,7 +2,7 @@ import { setItemCount } from "@/app/features/value/valueSlice";
 import { RootState } from "@/app/store";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { StyledSlider } from "./styles";
+import { StyledInput, StyledSlider } from "./styles";
 import "./styles.css";
 type Props = {
   title: string;
@@ -27,7 +27,7 @@ function Slider({ title, tabName, max }: Props) {
     <StyledSlider>
       <span>{title}</span>
       <br />
-      <input
+      <StyledInput
         id="range-slider__range"
         onChange={onChange}
         type="range"

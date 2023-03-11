@@ -64,6 +64,9 @@ export const StyledSocialMain = styled.div`
   display: flex;
 `;
 export const StyledSocialMedia = styled.div`
+ @media (max-width: 415px) {
+  margin-left:0px;
+  }
   @media (max-width: 852px) {
     flex-direction: row;
   }
@@ -165,6 +168,10 @@ export const StyledPaymentNetwork = styled.div`
   gap: 8px;
 `;
 export const StyledSubscribe = styled.div`
+  @media (max-width: 415px) {
+    width: 80%;
+    margin: 0 auto;
+  }
   @media (min-width: 1152px) {
     width: 50%;
   }
@@ -174,6 +181,9 @@ export const StyledSubscribe = styled.div`
 `;
 
 export const StyledInput = styled.input`
+  @media (max-width: 414px) {
+    width: 13rem;
+  }
   width: 25rem;
   padding: 0.5rem;
   border: 1px solid #585858;

@@ -5,6 +5,7 @@ import {
   StyledAddPocketButton,
   StyledDeliveryInfo,
   StyledDeliveryInfoBox,
+  StyledImg,
   StyledSpecialPocket,
   StyledSpecialPocketContainer,
   StyledSpecialPocketTitle,
@@ -58,7 +59,7 @@ export default function Pocket({}: Props) {
             </svg>
             <StyledDeliveryInfo>2 ayda 1 gönderim</StyledDeliveryInfo>
           </StyledDeliveryInfoBox>
-          <img
+          <StyledImg
             src="https://beije.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpacket.c4ec1969.png&w=828&q=75"
             alt=""
           />
