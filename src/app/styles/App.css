@@ -1,5 +1,69 @@
-*{box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font: 300 100% "Helvetica Neue", Helvetica, Arial;
+}
+@font-face {
+  font-family: "Gordita";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gordita Regular"), url("../assets/Gordita\ Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gordita";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Gordita Medium"), url("../assets/Gordita\ Medium.woff") format("woff");
+}
+
+html {
+  font-family: Gordita;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  padding: 0.75rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.two:hover ~ hr {
+  margin-left: 25%;
+}
+
+.three:hover ~ hr {
+  margin-left: 50%;
+}
+
+.four:hover ~ hr {
+  margin-left: 75%;
+}
+
+hr {
+  height: 0.25rem;
+  width: 25%;
+  margin: 0;
+  background: tomato;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.focused-button {
+  border-bottom: 1px solid black !important;
+}
 
 /*Range style*/
 #range-slider__range {
@@ -7,7 +71,7 @@
   width: calc(100% - (73px));
   height: 10px;
   border-radius: 5px;
-  background: #d7dcdf; 
+  background: #d7dcdf;
   outline: none;
   padding: 0;
   margin: 0;
@@ -27,11 +91,13 @@
 /*On hover change colour of black thumb into green 🟢 and scale size*/
 #range-slider__range::-webkit-slider-thumb:hover {
   transform: scale(1.1);
-  background: #1abc9c;}
+  background: #1abc9c;
+}
 
 #range-slider__range:active::-webkit-slider-thumb {
   transform: scale(1.1);
-  background: #1abc9c;}
+  background: #1abc9c;
+}
 
 /*Range current value*/
 #range-slider__value {
@@ -58,4 +124,3 @@
   border-bottom: 7px solid transparent;
   content: "";
 }
-

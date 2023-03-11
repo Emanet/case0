@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Slider from "../Slider";
 import Tab from "../Tab";
 import { StyledButton, StyledNav } from "./styles";
-import "./App.css";
-import "./style";
 import { PED_TABS, PED_TYPES } from "@/app/features/value/type";
 
 type Props = {};

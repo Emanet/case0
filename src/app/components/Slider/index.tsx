@@ -3,7 +3,6 @@ import { RootState } from "@/app/store";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { StyledInput, StyledSlider } from "./styles";
-import "./styles.css";
 type Props = {
   title: string;
   max: number;
