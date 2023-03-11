@@ -1,4 +1,5 @@
 import { setItemCount } from "@/app/features/value/valueSlice";
+import { RootState } from "@/app/store";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { StyledSlider } from "./styles";
@@ -10,7 +11,7 @@ type Props = {
 };
 
 function Slider({ title, tabName, max }: Props) {
-  const items = useSelector((state) => state.counter.items);
+  const items = useSelector((state: RootState) => state.counter.items);
 
   const dispatch = useDispatch();
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
