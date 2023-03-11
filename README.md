@@ -5,19 +5,7 @@ This is the case study for Beije.co Software Developer Internship.
 
 https://case0.vercel.app/ 
 ## Folder Structure
-```
-├── public
-└── src
-     ├──app
-```
 
-```
-└── app
-    ├── assets
-    ├── components
-    ├── features
-    ├── styles
-```
 ```
 ├── README.md
 ├── next-env.d.ts
