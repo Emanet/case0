@@ -31,6 +31,9 @@ export const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
   }
+  @media (min-width: 852px) and (max-width: 1074px) {
+    flex-direction: column;
+  }
   gap: 32px;
   place-content: center;
   display: flex;
@@ -64,8 +67,13 @@ export const StyledSocialMain = styled.div`
   display: flex;
 `;
 export const StyledSocialMedia = styled.div`
- @media (max-width: 415px) {
-  margin-left:0px;
+  @media (min-width: 852px) and (max-width: 1074px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 415px) {
+    margin-left: 0px;
   }
   @media (max-width: 852px) {
     flex-direction: row;
@@ -75,6 +83,7 @@ export const StyledSocialMedia = styled.div`
   margin-left: 40px;
 `;
 export const StyledSocialBox = styled.div`
+  justify-content: center;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -113,6 +122,10 @@ export const StyledFooterPolicyMain = styled.div`
     flex-direction: column;
     align-items: center;
   }
+  @media (min-width: 852px) {
+    flex-direction: column;
+    align-items: center;
+  }
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -127,6 +140,9 @@ export const StyledFooterPolicyMain = styled.div`
 `;
 
 export const StyledLanguage = styled.button`
+  border-right: 1px solid white;
+  border-radius: 0;
+  height: 1px;
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;

@@ -95,31 +95,26 @@ function Footer({}: Props) {
             <StyledSocialMedia>
               <a href="">
                 <StyledSocialBox>
-                  <img src="" alt="" />
                   <p>Facebook</p>
                 </StyledSocialBox>
               </a>
               <a href="">
                 <StyledSocialBox>
-                  <img src="" alt="" />
                   <p>Instagram</p>
                 </StyledSocialBox>
               </a>
               <a href="">
                 <StyledSocialBox>
-                  <img src="" alt="" />
                   <p>Twitter</p>
                 </StyledSocialBox>
               </a>
               <a href="">
                 <StyledSocialBox>
-                  <img src="" alt="" />
                   <p>Linkedin</p>
                 </StyledSocialBox>
               </a>
               <a href="">
                 <StyledSocialBox>
-                  <img src="" alt="" />
                   <p>Spotify</p>
                 </StyledSocialBox>
               </a>

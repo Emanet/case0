@@ -20,6 +20,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledBoxes = styled.div`
+margin: 0 1rem 0 1rem;
   @media (max-width: 852px) {
     flex-direction: column;
     align-items: center;

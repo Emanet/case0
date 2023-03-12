@@ -17,7 +17,7 @@ export const StyledSpecialPocket = styled.div`
   }
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 2rem;
   gap: 2rem;
 `;
 export const StyledSpecialPocketTitle = styled.span`
