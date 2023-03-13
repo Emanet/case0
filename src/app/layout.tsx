@@ -1,8 +1,9 @@
-'use client'
+"use client";
 import { Provider } from "react-redux";
+import StyledComponentsRegistry from "./registry";
 import { store } from "./store";
 import { StyledBody } from "./styled";
-import "./styles/App.css"
+import "./styles/App.css";
 export default function RootLayout({
   children,
 }: {
@@ -10,9 +11,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <StyledBody>
-        <Provider store={store}>{children}</Provider>
-      </StyledBody>
+      <head></head>
+      <StyledComponentsRegistry>
+        <StyledBody>
+          <Provider store={store}>{children}</Provider>
+        </StyledBody>
+      </StyledComponentsRegistry>
     </html>
   );
 }
