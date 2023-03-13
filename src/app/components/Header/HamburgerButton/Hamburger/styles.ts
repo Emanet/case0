@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHamburger = styled.div`
-text-align: center;
+  text-align: center;
   align-items: center;
   position: absolute;
   top: 0;
@@ -18,6 +18,14 @@ text-align: center;
   z-index: 1500;
   button {
     width: 50px;
-    background:none ;
+    background: none;
   }
+`;
+
+export const StyledCloseButton = styled.button`
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 20px;
+  cursor: pointer;
 `;

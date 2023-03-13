@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledHamburger } from "./styles";
+import { StyledCloseButton, StyledHamburger } from "./styles";
 
 type Props = {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
@@ -13,7 +13,7 @@ function Hamburger({ setIsActive }: Props) {
       <a href="/">Bağış Kültürü</a>
       <a href="/">Blog</a>
       <a href="/">Kendi Paketini Oluştur</a>
-      <button onClick={() => setIsActive(false)}>X</button>
+      <StyledCloseButton onClick={() => setIsActive(false)}>X</StyledCloseButton>
     </StyledHamburger>
   );
 }
